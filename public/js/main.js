@@ -16,4 +16,10 @@ document.querySelector('p').addEventListener('click', ()=>{
     document.querySelector('p').classList.toggle('text-style');
 });
 // ### 4. Dans l'avant dernier paragraphe, tu as trois span, créer un programme qui met la class bolder sur le mot sur le quel on clique 
+let p = document.querySelectorAll('p')[1];
+for(let i = 0; i < p.children.length; i++){
+    p.children[i].addEventListener('click', () => {
+        p.children[i].classList.add('bolder');
+    })
+}
 // ### 5. Dans le dernier paragraphe tu as trois span,, créer un programme qui rajoute la class "bolrder-red" sur le mot sur le quel on clique mais retire cette class au deux autres, si elles l'ont !
