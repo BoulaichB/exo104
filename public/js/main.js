@@ -23,3 +23,9 @@ for(let i = 0; i < p.children.length; i++){
     })
 }
 // ### 5. Dans le dernier paragraphe tu as trois span,, créer un programme qui rajoute la class "bolrder-red" sur le mot sur le quel on clique mais retire cette class au deux autres, si elles l'ont !
+let lastP = document.querySelectorAll('p')[2];
+for(let i = 0; i < lastP.children.length; i++){
+    lastP.children[i].addEventListener('click', () => {
+        lastP.children[i].classList.toggle('bolder-red');
+    })
+}
